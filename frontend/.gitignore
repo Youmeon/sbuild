@@ -8,6 +8,8 @@ dist/
 # Локальные файлы
 .env
 .env.local
+.env.development
+.env.production
 
 # Логи и кэш
 npm-debug.log*
