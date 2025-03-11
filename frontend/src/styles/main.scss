@@ -1,0 +1,11 @@
+@use '@/styles/variables' as vars;
+@use './base/normalize';
+@use './base/reset';
+@use './utils/mixins';
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+}

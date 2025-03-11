@@ -1,0 +1,12 @@
+@use '../../styles/variables.scss' as vars;
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  background-color: vars.$primary-black;
+  color: white;
+  width: 100vw;
+  min-height: 1100px;
+}
