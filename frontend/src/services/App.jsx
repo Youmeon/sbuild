@@ -1,8 +1,12 @@
-import AppRouter from '@/routes/Router';
-import Home from '../pages/Home/Home';
-import Layout from '../components/Layout/Layout';
-import { ThemeProvider } from '@/context/ThemeContext'; // Пример контекста
-import '@/#/base/main.scss';
+import React from 'react';
+import AppRouterDefault from '@/routes/Router'; // Переименуйте для ясности
+import { ThemeProvider } from '@/context/ThemeContext';
+import '@/styles/main.scss';
+
+const AppRouter = AppRouterDefault.default; // Извлекаем компонент из default
+
+console.log('AppRouter:', AppRouter); // Должно вывести функцию
+console.log('ThemeProvider:', ThemeProvider);
 
 const App = () => {
   return (

@@ -1,16 +1,13 @@
 import React from 'react'
-import Header from '../../components/Header/Header'
-import Footer from '../../components/Footer/Footer'
 import styles from './Home.module.scss'
+import AppRouter from '../../routes/Router'
 
 const Home = () => {
   return (
     <>
-      <Header />
       <main className={styles.main}>
-
+        <h1>Ilya YOU CRAZY</h1>
       </main>
-      <Footer />
     </>
   )
 }

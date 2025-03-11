@@ -1,18 +1,19 @@
 import { Outlet } from 'react-router-dom';
-import Header from '../Header/Header';
-import Footer from '../Footer/Footer';
+import Header from '../Header/Header.jsx';
+import Footer from '../Footer/Footer.jsx';
 
-const Layout = ({ children, title, desc }) => {
+const Layout = ({ children }) => {
   return (
     <>
-      <Helmet>
+      {/* SEO данные */}
+      {/* <Helmet>
         <title>{title}</title>
         <meta name="description" content={desc} />
-      </Helmet>
+      </Helmet> */}
 
       <Header />
       <main>
-        <Outlet /> {children}
+        {children}
       </main>
       <Footer />
     </>
