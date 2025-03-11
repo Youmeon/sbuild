@@ -62,9 +62,10 @@ module.exports = (env, argv) => {
       ]
     },
     resolve: {
-      extensions: ['.js', '.jsx'],
+      extensions: ['.js', '.jsx', '.scss'],
       alias: {
-        '@': path.resolve(__dirname, 'src')
+        '@': path.resolve(__dirname, 'src'),
+        '#': path.resolve(__dirname, 'styles')
       }
     },
     devServer: {

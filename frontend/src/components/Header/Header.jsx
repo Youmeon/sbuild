@@ -1,8 +1,11 @@
 import React from 'react'
+import styles from './Header.module.scss'
 
-function Header() {
+const Header = () => {
   return (
-    <div>Header</div>
+    <header className={styles.header}>
+      
+    </header>
   )
 }
 

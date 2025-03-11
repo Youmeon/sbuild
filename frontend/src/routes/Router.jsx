@@ -8,9 +8,9 @@ const AppRouter = () => {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Layout />}>
+        <Route path="/" element={<Layout><Home /></Layout>}>
           <Route index element={<Home />} />
-          <Route path="about" element={<About />} />
+          <Route path="/about" element={<Layout title='О нас' desc='Узнайте больше о нашей компании'><About /></Layout>} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
